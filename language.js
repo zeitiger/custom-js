@@ -8,7 +8,7 @@ jQuery(function () {
   }
   allLanguages.forEach(function (lang) {
     if (language !== lang) {
-      style += ':lang(' + lang + ') { display:none; }';
+      style += 'body :lang(' + lang + ') { display:none; }';
     }
   });
   $('<style/>').text(style).appendTo('head');
